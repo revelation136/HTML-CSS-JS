@@ -11,5 +11,9 @@ const mobileMenu = () => {
 };
 
 menu.addEventListener('click', mobileMenu);
+// this menulinks will disappear the drop down menu when you click somewhere in the menu or in the screen
+menuLinks.addEventListener('click', mobileMenu);
 
 // Show Active Menu when Scrolling
+// Highlight Menu
+
