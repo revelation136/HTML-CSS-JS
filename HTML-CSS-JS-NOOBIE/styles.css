@@ -15,6 +15,7 @@
     font-size: 1rem;
     position: sticky;
     top: 0;
+    /* z index means stack order of an element or u can take it as text wrap from word, behind text or infront of text */
     z-index: 999;
 }
 
@@ -91,6 +92,7 @@
     transition: all 0.3s ease;
 }
 
+/* this will make the navbar menu turns blue if you hover on them */
 .navbar__links:hover {
     color: #9518fc;
     transition: all 0.3s ease;   
@@ -132,7 +134,7 @@
             font-size: 1.6rem;
         }
 
-        #nav__logo {
+        #navbar__logo {
             padding-left: 25px;  
         }
 
@@ -183,7 +185,7 @@
             cursor: pointer;
             margin: 2px;
         }
-
+/* this is where that after you click on that hamburger menu, it will turn to X mark, and this section will be targeted in JS */
         #mobile-menu.is-active .bar:nth-child(2) {
             opacity: 0;
         }
