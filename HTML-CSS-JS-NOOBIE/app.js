@@ -1,3 +1,4 @@
+// making of the x button on hamburger menu
 // defining Functions
 
 const menu = document.querySelector('#mobile-menu');
