@@ -110,7 +110,7 @@
             max-width: 1300px;
             padding: 0;
         }
-
+        /* inside hamburger menu */
         .navbar__menu {
             display: grid;
             grid-template-columns: auto;
@@ -123,7 +123,7 @@
             z-index: -1;
             background: #131313;
         }
-
+        /* inside hamburger menu */
         .navbar__menu.active {
             background: #131313;
             top: 100%;
@@ -172,7 +172,7 @@
             height: 80px;
             margin: 0;
         }
-
+        /* Hamburger menu */
         #mobile-menu {
             position: absolute;
             top: 20%;
