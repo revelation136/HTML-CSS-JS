@@ -24,21 +24,21 @@ const highlightMenu = () => {
     const aboutMenu = document.querySelector('#about-page');
     const servicesMenu = document.querySelector('#services-page');
     let scrollPos = window.scrollY;
-    // console.log(scrollPos);
+    console.log(scrollPos);
 
     // add 'highlight' class to my menu items 
     // innerwidth is like if its below 960 pix, it wont work, thats the equation of this line
-    if (window.innerWidth > 960 && scrollPos < 600) {
+    if (window.innerWidth > 960 && scrollPos < 490) {
         homeMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
     // classlist.add is like if the home nav is highlighted, the next will one will be and so on, so we solve it like this ⬇ 
         return;
-    } else if (window.innerWidth > 960 && scrollPos < 1400) {
+    } else if (window.innerWidth > 960 && scrollPos < 1000) {
         aboutMenu.classList.add('highlight');
         homeMenu.classList.remove('highlight');
         servicesMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 960 && scrollPos < 2345) {
+    } else if (window.innerWidth > 960 && scrollPos < 1900) {
         servicesMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         return;
