@@ -336,14 +336,24 @@
 
 .main__btn a {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     color: #fff;
+    /* removing underline on button textes */
     text-decoration: none;
+    display: inline-block;
+    padding: 2em;
+    margin: -2em;
+    /* => Fixing <a> tag inside button tag not addresable surroundings
+    Display: inline-block is required so that margins and padding can be set
+    Position needs to be relative so that...
+    z-index can be used to make the clickable area stay on top of any text that follows
+    Padding increases the area that can be clicked
+    Negative Margin keeps the flow of surrounding text as it should be (beware of overlapping links) */
 }
-/* removing underline on button textes */
 
 .main__btn::after {
     position: absolute;
+    /* we need the content property for the purpose that it needs something to show up, so we leave it blank for the effect */
     content: '';
     top: 0;
     left: 0;
